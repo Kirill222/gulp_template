@@ -9,6 +9,7 @@ global.app = {
 
 //tasks import
 import {copy} from './gulp/tasks/copy.js'
+import {reset} from './gulp/tasks/reset.js'
 
 //наблюдатель за изменениями в файлах
 function watcher() {
@@ -16,7 +17,7 @@ function watcher() {
 }
 
 //Построение сценариев выполнения задач
-const dev = gulp.series(copy, watcher)
+const dev = gulp.series(reset, copy, watcher)
 
 //Выполнение сценария по умолчанию
 gulp.task('default', dev)
