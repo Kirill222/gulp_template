@@ -8,6 +8,7 @@ export const path = {
     build: {
         js: `${buildFolder}/js/`,
         images: `${buildFolder}/img/`,
+        fonts: `${buildFolder}/fonts/`,
         css: `${buildFolder}/css/`,
         html: `${buildFolder}/`,
         files: `${buildFolder}/files/`,
